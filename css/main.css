@@ -63,11 +63,11 @@ body {
     .section-profile__title h2 {
       line-height: 1.2;
       color: #f03e3e;
-      font-size: 1.6rem;
+      font-size: 2.4rem;
       font-weight: 600; }
     .section-profile__title h1 {
       font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-      font-size: 28px;
+      font-size: 3.5rem;
       text-rendering: optimizeLegibility;
       font-weight: 600; }
   .section-profile__detail {
