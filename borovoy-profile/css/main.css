@@ -1,0 +1,85 @@
+body {
+  color: #212529;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background-image: url(../images/macbook.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #464646; }
+
+.section-profile {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center; }
+  .section-profile .wrapper {
+    border-radius: 4px 4px;
+    margin: 0 auto;
+    height: 320px;
+    max-width: 460px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 0px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  .section-profile__photo {
+    position: relative;
+    top: -8rem;
+    right: -29rem;
+    border-radius: 7rem;
+    height: 13rem;
+    overflow: hidden;
+    width: 13rem; }
+    .section-profile__photo img {
+      width: 120%; }
+  .section-profile__title {
+    position: relative;
+    top: 0rem;
+    left: 2rem;
+    text-align: left;
+    display: inline;
+    color: #000; }
+    .section-profile__title h2 {
+      line-height: 1.2;
+      color: #f03e3e;
+      font-size: 1.6rem;
+      font-weight: 600; }
+    .section-profile__title h1 {
+      font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+      font-size: 28px;
+      text-rendering: optimizeLegibility;
+      font-weight: 600; }
+  .section-profile__detail {
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 0rem; }
+    .section-profile__detail p {
+      color: #000; }
+    .section-profile__detail a {
+      color: #f03e3e;
+      position: relative;
+      text-decoration: none;
+      -webkit-transition: color 1s ease-in-out;
+      transition: color 1s ease-in-out; }

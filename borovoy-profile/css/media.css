@@ -1,0 +1,91 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    body {
+        background-image: url(../images/macbook-small.jpg);
+         }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .section-profile .wrapper {
+        border-radius: 4px 4px;
+        margin: 0 auto;
+        height: 460px;
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        position: relative;
+        top: 0px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; 
+        }
+
+    .section-profile__title {
+        text-align: center;
+        top: 16rem;
+        left: 0rem;
+    }
+
+    .section-profile__photo {
+        top: -7rem;
+        right: 0rem;
+        left: 9rem;
+    }
+
+    .section-profile__detail {
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-top: 10rem;
+    }
+        
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
