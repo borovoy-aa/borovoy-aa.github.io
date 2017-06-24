@@ -42,6 +42,14 @@
         left: 0rem;
     }
 
+    .section-profile__title h1 {
+        font-size: 3.4rem;
+    }
+    .section-profile__title h2 {
+        font-size: 2.2rem;
+        line-height: 0.3;
+    }
+
     .section-profile__photo {
         top: -7rem;
         right: 0rem;
@@ -53,6 +61,10 @@
         font-weight: 600;
         line-height: 1.5;
         margin-top: 10rem;
+    }
+
+    .section-profile__detail p {
+        font-size: 2rem;
     }
         
 }
