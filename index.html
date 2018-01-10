@@ -2,39 +2,129 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Artem Borovoy - web-developer</title>
+    <title>Artem Borovoy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Веб-разработчик">
-    <meta name="keywords" content="разработка артем боровой разработка сайтов html css sass bootstrap pug javascript js">
-    <meta name="apple-mobile-web-app-title" content="Артём Боровой - веб-разработчик">
-    <meta name="application-name" content="Артём Боровой - веб-разработчик">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta http-equiv="Reply-to" content="mail@yandex.ru">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/media.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="shortcut icon" href="images/site-logo.png" type="image/x-icon">
   </head>
-  <body>      
-    <section>
-      <div class="container-fluid">
+  <body>
+    <header class="header fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light"><a class="navbar-brand" href="#">
+             < <span class="red">portfolio </span><span>/></span></a>
+          <div class="menu navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="menu-global menu-top"></span><span class="menu-global menu-middle"></span><span class="menu-global menu-bottom"></span></div>
+          <div class="collapse navbar-collapse header__navbar" id="navbarNavAltMarkup">
+            <div class="navbar-nav"><a class="nav-item nav-link active" href="#firstPage">Home <span class="sr-only">(current)</span></a><a class="nav-item nav-link" href="#secondPage">About Me</a><a class="nav-item nav-link" href="#thirdPage">Portfolio</a><a class="nav-item nav-link" href="#fourthPage">Contacts</a></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="section-content" id="firstPage">
+      <div class="subsection"></div>
+      <div class="container-fluid section-content__container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 col-xl-5 col-8">
+          <div class="col-lg-12 col-xl-12 col-8">
             <div class="wrapper">
-              <div class="sub-wrapper">
-                <div class="title">
-                  <h1>Artem Borovoy</h1>
-                  <h2>web-developer</h2>
-                </div>
-                <div class="photo"><img src="../images/2289.jpg" alt=""></div>
+              <div class="photo vis-hidden wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"><img class="img-fluid" src="images/2289.jpg" alt=""></div>
+              <div class="title vis-hidden wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                <h2>web-dev</h2>
               </div>
-              <div class="detail">Связаться со мной можно через <a href="https://t.me/a_borovoy" target="_blank">Telegram, </a><a href="https://vk.com/boo_oo_o" target="_blank">Вконтакте </a>или по  <a href="mailto:work.borovoy@gmail.com" target="_blank">e-mail</a>.</div>
+              <hr class="subline"><span class="my-skills">Html - Pug - CSS - Sass - Git - БЭМ - Photoshop - Js(jq)</span><a class="slide-down floating" href="#secondPage"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </section>
+    <section class="section-about-me second" id="secondPage">
+      <div class="subsection"></div>
+      <div class="container opacity-zero">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-9 col-md-12">
+            <h2 class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">Borovoy Artem</h2>
+            <h4 class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">html-coder, freelancer</h4>
+            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s"><span>About me: </span>I'm a student. I immersed myself in learning web development over a year ago. During this time I learned, and was able use in their projects, the following technologies for  web development: HTML5, Jade(pug), BEM, CSS3, Sass, Bootstrap(3,4), basic knowledge of Javascript(Jquery), git and Wordpress.</p>
+            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">I develop by W3C standards (valid code), I follow the cross-browser compatibility of Chrome, FireFox 3+, IE 9+, Opera 10+. I have experience in developing projects with responsive design (responsive web design)</p>
+            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Developing a tableless (all on a div), full compliance with the layout.</p>
+            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s"><span>Education: </span>At the moment I am studying at East Ukrainian National University, at the faculty of computer science and engineering.</p>
+            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".8s"><span>Languages: </span>Ukrainian, Russian, English - intermediate, level working with the technical documentation.</p>
+            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".9s"><span>Personal qualities: </span>Responsibility, punctuality, sociability, accuracy, stress resistance, learning ability, attentiveness, good sense of humor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-works third" id="thirdPage">
+      <div class="subsection"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="section-works__head">
+              <h3>My Works</h3>
+              <hr class="subline subline--large">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-sm-6 col-6">
+            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s"><a class="work-link" href="casablanka-landing/index.html" target="_blank"><img class="img-fluid" src="images/works/1-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Casablanca</span></span></a></div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6">
+            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s"><a class="work-link" href="take-landing/index.html" target="_blank"><img class="img-fluid" src="images/works/2-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Take</span></span></a></div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6">
+            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".7s"><a class="work-link" href="fudi-landing/index.html" target="_blank"><img class="img-fluid" src="images/works/3-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Fudi</span></span></a></div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6">
+            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".9s"><a class="work-link" href="altair-landing/index.html" target="_blank"><img class="img-fluid" src="images/works/4-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Altair</span></span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-contacts" id="fourthPage">
+      <div class="subsection"></div>
+      <div class="container vis-hidden wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+        <div class="row">
+          <div class="col">
+            <div class="section-contacts__head">
+              <h3>contact me</h3>
+              <hr class="subline subline--red">
+              <h4>LEAVE ME A MESSAGE</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-8 col-10">
+            <form class="section-contacts__my-form" method="POST" action="http://formspree.io/work.borovoy@gmail.com">
+              <input type="email" name="email" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$">
+              <textarea name="message" placeholder="Your message"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links"><a class="vis-hidden fa fa-twitter wow fadeInDown" href="https://twitter.com/Borovoy_Artem" target="_blank" aria-hidden="true" data-wow-duration="1s" data-wow-delay="1s"></a><a class="vis-hidden fa fa-telegram wow fadeInUp" href="https://t.me/a_borovoy" target="_blank" aria-hidden="true" data-wow-duration="1s" data-wow-delay="1s"></a><a class="vis-hidden fa fa-vk wow fadeInDown" href="https://vk.com/boo_oo_o" target="_blank" aria-hidden="true" data-wow-duration="1s" data-wow-delay="1s"></a></div>
+            <div class="my-email">
+              <div class="email-logo"><i class="fa fa-envelope-o" aria-hidden="true"></i></div><i>work.borovoy@gmail.com</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://use.fontawesome.com/55a91439e0.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

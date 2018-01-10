@@ -1,0 +1,1 @@
+$(document).ready(function(){new WOW({boxClass:"wow",mobile:!1,live:!0}).init();var t=$("html, body");$('a[href*="#"]').click(function(){return t.animate({scrollTop:$($.attr(this,"href")).offset().top},600),!1})});

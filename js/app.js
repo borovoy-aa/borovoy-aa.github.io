@@ -1,0 +1,1 @@
+$(document).ready(function(){(new WOW).init();var i=$("html, body");$('a[href*="#"]').click(function(){return i.animate({scrollTop:$($.attr(this,"href")).offset().top},600),!1});var t=$(".header");$(window).scroll(function(){$(this).scrollTop()>400?($(t).css("opacity","1"),$(t).css("visibility","visible")):($(t).css("opacity","0"),$(t).css("visibility","hidden"))})});
