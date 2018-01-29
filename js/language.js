@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#ru_click").click(function(){$(".en").fadeOut(400,function(){$(".ru").fadeIn()}),$(this).addClass("current_lang"),$("#en_click").removeClass("current_lang")}),$("#en_click").click(function(){$(".ru").fadeOut(300,function(){$(".en").fadeIn()}),$(this).addClass("current_lang"),$("#ru_click").removeClass("current_lang")})});

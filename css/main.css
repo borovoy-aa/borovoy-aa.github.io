@@ -47,6 +47,8 @@ h3 {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -o-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s; }
+  .header__language {
+    font-size: 1.2rem; }
   .header .navbar-light .navbar-nav .nav-link {
     color: #212121;
     font-family: 'Roboto', sans-serif;
@@ -254,9 +256,8 @@ h3 {
     backface-visibility: hidden;
     overflow: hidden; }
     .section-works .work-link:hover img {
-      -webkit-transform: scale(1.1, 1.1);
-      -ms-transform: scale(1.1, 1.1);
-      transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.2, 1.2) rotate3d(1, 1, -1, 20deg);
+      transform: scale(1.2, 1.2) rotate3d(1, 1, -1, 20deg);
       position: relative;
       opacity: .15;
       border-bottom: 100% solid red; }
@@ -294,12 +295,12 @@ h3 {
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1);
-      -webkit-transition-timing-function: easy;
-      -o-transition-timing-function: easy;
-      transition-timing-function: easy;
-      -webkit-transition-duration: 350ms;
-      -o-transition-duration: 350ms;
-      transition-duration: 350ms; }
+      -webkit-transition-timing-function: easy-out;
+      -o-transition-timing-function: easy-out;
+      transition-timing-function: easy-out;
+      -webkit-transition-duration: .7s;
+      -o-transition-duration: .7s;
+      transition-duration: .7s; }
 
 .inside {
   background-color: #212121;
@@ -391,7 +392,8 @@ h3 {
       cursor: pointer;
       -webkit-transition: .7s;
       -o-transition: .7s;
-      transition: .7s; }
+      transition: .7s;
+      margin: 0 auto; }
       .section-contacts__my-form button:hover {
         background: white;
         background: rgba(255, 255, 255, 0.6);
@@ -447,3 +449,32 @@ h3 {
     align-items: center; }
     .section-contacts .my-email .email-logo {
       font-size: 2rem; }
+
+#ru {
+  display: none; }
+
+.button_lang {
+  color: #f03e3e;
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  cursor: pointer; }
+  .button_lang:hover {
+    color: #212121;
+    -webkit-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out; }
+
+.social {
+  display: inline;
+  padding: 0; }
+
+.current_lang {
+  color: #212121;
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out; }
+
+ul li {
+  width: auto;
+  display: inline; }

@@ -7,8 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <meta http-equiv="Reply-to" content="mail@yandex.ru">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
@@ -17,11 +16,16 @@
   <body>
     <header class="header fixed-top">
       <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-light"><a class="navbar-brand" href="#">
-             < <span class="red">portfolio </span><span>/></span></a>
+        <nav class="navbar navbar-expand-sm navbar-light">
           <div class="menu navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="menu-global menu-top"></span><span class="menu-global menu-middle"></span><span class="menu-global menu-bottom"></span></div>
+          <div class="header__language"><
+            <ul class="social">
+              <li class="button_lang current_lang" id="en_click">En </li>- 
+              <li class="button_lang" id="ru_click">Ru</li>
+            </ul><span>/></span>
+          </div>
           <div class="collapse navbar-collapse header__navbar" id="navbarNavAltMarkup">
-            <div class="navbar-nav"><a class="nav-item nav-link active" href="#firstPage">Home <span class="sr-only">(current)</span></a><a class="nav-item nav-link" href="#secondPage">About Me</a><a class="nav-item nav-link" href="#thirdPage">Portfolio</a><a class="nav-item nav-link" href="#fourthPage">Contacts</a></div>
+            <div class="navbar-nav"><a class="en nav-item nav-link active" href="#firstPage">Home <span class="sr-only">(current)</span></a><a class="ru nav-item nav-link active" id="ru" href="#firstPage">Главная<span class="sr-only">(current)</span></a><a class="en nav-item nav-link" href="#secondPage">About Me</a><a class="ru nav-item nav-link" id="ru" href="#secondPage">Обо мне</a><a class="en nav-item nav-link" href="#thirdPage">Portfolio</a><a class="ru nav-item nav-link" id="ru" href="#thirdPage">Портфолио</a><a class="en nav-item nav-link" href="#fourthPage">Contacts</a><a class="ru nav-item nav-link" id="ru" href="#fourthPage">Контакты</a></div>
           </div>
         </nav>
       </div>
@@ -47,14 +51,22 @@
       <div class="container opacity-zero">
         <div class="row justify-content-center">
           <div class="col-xl-8 col-lg-9 col-md-12">
-            <h2 class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">Borovoy Artem</h2>
-            <h4 class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">html-coder, freelancer</h4>
-            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s"><span>About me: </span>I'm a student. I immersed myself in learning web development over a year ago. During this time I learned, and was able use in their projects, the following technologies for  web development: HTML5, Jade(pug), BEM, CSS3, Sass, Bootstrap(3,4), basic knowledge of Javascript(Jquery), git and Wordpress.</p>
-            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">I develop by W3C standards (valid code), I follow the cross-browser compatibility of Chrome, FireFox 3+, IE 9+, Opera 10+. I have experience in developing projects with responsive design (responsive web design)</p>
-            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Developing a tableless (all on a div), full compliance with the layout.</p>
-            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s"><span>Education: </span>At the moment I am studying at East Ukrainian National University, at the faculty of computer science and engineering.</p>
-            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".8s"><span>Languages: </span>Ukrainian, Russian, English - intermediate, level working with the technical documentation.</p>
-            <p class="vis-hidden wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".9s"><span>Personal qualities: </span>Responsibility, punctuality, sociability, accuracy, stress resistance, learning ability, attentiveness, good sense of humor.</p>
+            <h2 class="en">Borovoy Artem</h2>
+            <h2 class="ru" id="ru">Боровой Артём</h2>
+            <h4 class="en">html-coder, freelancer</h4>
+            <h4 class="ru" id="ru">html-верстальщик, фрилансер</h4>
+            <p class="en"><span>About me: </span>I'm a student. I immersed myself in learning web development over a year ago. During this time I learned, and was able use in their projects, the following technologies for  web development: HTML5, Jade(pug), BEM, CSS3, Sass, Bootstrap(3,4), basic knowledge of Javascript(Jquery), git and Wordpress.</p>
+            <p class="ru" id="ru"><span>Обо мне: </span>Я студент. Больше года назад я погрузился в изучение веб-разработки. За это время я узнал и смог использовать в своих проектах следующие технологии для веб-разработки: HTML5, Jade (pug), BEM, CSS3, Sass, Bootstrap (3,4), базовые знания Javascript (JQuery), git и Wordpress.</p>
+            <p class="en">I develop by W3C standards (valid code), I follow the cross-browser compatibility of Chrome, FireFox 40+, IE 9+, Opera 40+. I have experience in developing projects with adaptive design (adaptive web design).</p>
+            <p class="ru" id="ru">Я разрабатываю по стандартам W3C (валидный код), следую кросс-браузерной совместимости Chrome, FireFox 40+, IE 9+, Opera 40+. Имею опыт разработки проектов с адаптивным дизайном (адаптивный веб-дизайн).</p>
+            <p class="en">Developing a tableless (all on a div), full compliance with the layout.</p>
+            <p class="ru" id="ru">Разработка без таблиц (все на div), полное соответствие макету.</p>
+            <p class="en"><span>Education: </span>At the moment I am studying at East Ukrainian National University, at the faculty of computer science and engineering.</p>
+            <p class="ru" id="ru"><span>Образование: </span>В настоящее время я учусь в Восточноукраинском национальном университете, на факультете информатики и техники.</p>
+            <p class="en"><span>Languages: </span>Ukrainian, Russian, English - below average, the level of work with technical documentation.</p>
+            <p class="ru" id="ru"><span>Языки: </span>Украинский, русский, английский - ниже среднего, уровень работы с технической документацией.</p>
+            <p class="en"><span>Personal qualities: </span>Responsibility, punctuality, sociability, accuracy, learning ability, attentiveness, good sense of humor.</p>
+            <p class="ru" id="ru"><span>Личные качества: </span>Ответственность, пунктуальность, коммуникабельность, точность, способность к обучению, внимательность, хорошее чувство юмора.</p>
           </div>
         </div>
       </div>
@@ -65,23 +77,24 @@
         <div class="row justify-content-center">
           <div class="col">
             <div class="section-works__head">
-              <h3>My Works</h3>
+              <h3 class="en">My Works</h3>
+              <h3 class="ru" id="ru">Мои работы</h3>
               <hr class="subline subline--large">
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-3 col-sm-6 col-6">
-            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s"><a class="work-link" href="casablanka-landing/index.html" target="_blank"><img class="img-fluid" src="images/works/1-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Casablanca</span></span></a></div>
+            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s"><a class="work-link" href="../casablanka-landing/index.html" target="_blank"><img class="img-fluid" src="../images/works/1-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Casablanca</span></span></a></div>
           </div>
           <div class="col-md-3 col-sm-6 col-6">
-            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s"><a class="work-link" href="take-landing/index.html" target="_blank"><img class="img-fluid" src="images/works/2-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Take</span></span></a></div>
+            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s"><a class="work-link" href="../take-landing/index.html" target="_blank"><img class="img-fluid" src="../images/works/2-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Take</span></span></a></div>
           </div>
           <div class="col-md-3 col-sm-6 col-6">
-            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".7s"><a class="work-link" href="fudi-landing/index.html" target="_blank"><img class="img-fluid" src="images/works/3-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Fudi</span></span></a></div>
+            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".7s"><a class="work-link" href="../fudi-landing/index.html" target="_blank"><img class="img-fluid" src="../images/works/3-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Fudi</span></span></a></div>
           </div>
           <div class="col-md-3 col-sm-6 col-6">
-            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".9s"><a class="work-link" href="altair-landing/index.html" target="_blank"><img class="img-fluid" src="images/works/4-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Altair</span></span></a></div>
+            <div class="inside vis-hidden wow fadeInRight" data-wow-duration="1s" data-wow-delay=".9s"><a class="work-link" href="../altair-landing/index.html" target="_blank"><img class="img-fluid" src="../images/works/4-work.jpg" alt=""><span class="work-link__title"><span class="work-link__subtitle">Altair</span></span></a></div>
           </div>
         </div>
       </div>
@@ -92,20 +105,25 @@
         <div class="row">
           <div class="col">
             <div class="section-contacts__head">
-              <h3>contact me</h3>
+              <h3 class="en">contact me</h3>
+              <h3 class="ru" id="ru">Свяжитесь со мной</h3>
               <hr class="subline subline--red">
-              <h4>LEAVE ME A MESSAGE</h4>
+              <h4 class="en">LEAVE A MESSAGE</h4>
+              <h4 class="ru" id="ru">ОСТАВЬТЕ СООБЩЕНИЕ</h4>
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-4 col-md-8 col-10">
             <form class="section-contacts__my-form" method="POST" action="https://formspree.io/work.borovoy@gmail.com">
-              <input type="email" name="_replyto" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$">
-              <textarea name="message" placeholder="Your message"></textarea>
-              <button type="submit">Send Message</button>
+              <input class="en" type="email" name="_replyto" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$">
+              <input class="ru" id="ru" type="email" name="_replyto" placeholder="Ваш адрес электронной почты" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$">
+              <textarea class="en" name="message" placeholder="Your message"></textarea>
+              <textarea class="ru" id="ru" name="message" placeholder="Ваше сообщение"></textarea>
+              <button class="en" type="submit">Send Message</button>
+              <button class="ru" id="ru" type="submit">Отправить</button>
             </form>
-            <div class="social-links"><a class="vis-hidden fa fa-twitter wow fadeInDown" href="https://twitter.com/Borovoy_Artem" target="_blank" aria-hidden="true" data-wow-duration="1s" data-wow-delay="1s"></a><a class="vis-hidden fa fa-telegram wow fadeInUp" href="https://t.me/a_borovoy" target="_blank" aria-hidden="true" data-wow-duration="1s" data-wow-delay="1s"></a><a class="vis-hidden fa fa-vk wow fadeInDown" href="https://vk.com/borovoy_aa" target="_blank" aria-hidden="true" data-wow-duration="1s" data-wow-delay="1s"></a></div>
+            <div class="social-links"><a class="vis-hidden fa fa-twitter wow fadeInDown" href="https://twitter.com/Borovoy_Artem" target="_blank" aria-hidden="true" data-wow-duration="1s" data-wow-delay=".7s"></a><a class="vis-hidden fa fa-telegram wow fadeInUp" href="https://t.me/a_borovoy" target="_blank" aria-hidden="true" data-wow-duration="1s" data-wow-delay=".7s"></a><a class="vis-hidden fa fa-vk wow fadeInDown" href="https://vk.com/boo_oo_o" target="_blank" aria-hidden="true" data-wow-duration="1s" data-wow-delay=".7s"></a></div>
             <div class="my-email">
               <div class="email-logo"><i class="fa fa-envelope-o" aria-hidden="true"></i></div><i>work.borovoy@gmail.com</i>
             </div>
@@ -122,9 +140,10 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/language.js"></script>
+    <script src="../js/wow.min.js"></script>
     <script src="https://use.fontawesome.com/55a91439e0.js"></script>
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
