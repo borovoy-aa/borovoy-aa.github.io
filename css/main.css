@@ -430,11 +430,11 @@ h3 {
       color: #507299; }
     .section-contacts .social-links .fa-telegram-plane:hover {
       color: #0088cc; }
-      .section-contacts .social-links .fab {
-        -webkit-transition: .4s;
-        -o-transition: .4s;
-        transition: .4s;
-      }
+    .section-contacts .anime-link {
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+    }
   .section-contacts .my-email {
     width: 100%;
     display: -webkit-box;
