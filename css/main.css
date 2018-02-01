@@ -340,6 +340,7 @@ h3 {
   padding-bottom: 3rem;
   font-family: medium-content-serif-font, Georgia,Cambria, "Times New Roman", Times, serif;
   text-align: center;
+  min-height: 100vh;
   background-image: url(../images/contact-bcg.jpg);
   background-position: center center;
   background-attachment: fixed;
