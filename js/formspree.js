@@ -6,7 +6,7 @@ $(document).on('submit', '#contact-form', function(e) {
         body_text = body.val();
 
     $.ajax({
-        url: "https://formspree.io/addr@example.com",
+        url: "https://formspree.io/work.borovoy@gmail.com",
         method: "POST",
         data: {
             _replyto: replyto_text,
