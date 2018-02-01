@@ -345,7 +345,6 @@ h3 {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -115,11 +115,11 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-4 col-md-8 col-10">
-            <form class="section-contacts__my-form" action="https://formfarm.im/work.borovoy@gmail.com" method="POST">
-              <input class="en" type="email" name="_replyto" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-              <input class="ru" type="email" name="_replyto" placeholder="Ваш адрес электронной почты" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-              <textarea class="en" name="message" placeholder="Your message"></textarea>
-              <textarea class="ru" name="message" placeholder="Ваше сообщение"></textarea>
+            <form id="contact-form" class="section-contacts__my-form" action="https://formspree.io/work.borovoy@gmail.com" method="POST">
+              <input class="en" type="email" name="_replyto" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+              <input class="ru" type="email" name="_replyto" placeholder="Ваш адрес электронной почты" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+              <textarea class="en" name="message" placeholder="Your message" required></textarea>
+              <textarea class="ru" name="message" placeholder="Ваше сообщение" required></textarea>
               <button class="en" type="submit">Send Message</button>
               <button class="ru" type="submit">Отправить</button>
             </form>
