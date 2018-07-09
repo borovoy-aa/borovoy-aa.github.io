@@ -164,12 +164,8 @@ h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url(../images/header-bcg.jpg);
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh; }
+
   .section-content__container {
     z-index: 2; }
   .section-content .wrapper {
@@ -225,11 +221,6 @@ h3 {
     background-color: #f03e3e; }
 
 .section-works {
-  background-image: url(../images/works-bcg.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,7 +306,8 @@ h3 {
   height: auto;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  position: relative; }
+  position: relative;
+  background-color: #fff; }
   .section-about-me h2 {
     color: #f03e3e;
     font-size: 3.5rem; }
@@ -340,7 +332,6 @@ h3 {
   font-family: medium-content-serif-font, Georgia,Cambria, "Times New Roman", Times, serif;
   text-align: center;
   min-height: 100vh;
-  /* background-image: url(../images/contact-bcg.jpg); */
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
