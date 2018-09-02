@@ -123,6 +123,10 @@ h3 {
     -o-transition: 0.2s;
     transition: 0.2s; }
 
+.title h1 {
+  color: #f03e3e;
+}
+
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,7 +358,7 @@ h3 {
   .section-contacts .subsection {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #77a59f;
     z-index: 0;
     position: absolute;
     top: 0; }
@@ -471,15 +475,3 @@ h3 {
 
 ul li {
   display: inline; }
-
-.videoBcg {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-}
